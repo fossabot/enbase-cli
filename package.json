@@ -1,0 +1,9 @@
+{
+  "name": "enbase-cli",
+  "version": "1.0.0",
+  "description": "A powerful CLI for interacting with Enbase",
+  "main": "dist",
+  "repository": "https://github.com/enteam/enbase-cli.git",
+  "author": "Matisiek PL <matisiek11@gmail.com>",
+  "license": "MIT"
+}
