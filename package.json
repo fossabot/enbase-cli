@@ -4,7 +4,7 @@
   "description": "A powerful CLI for interacting with Enbase",
   "main": "dist",
   "scripts": {
-    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "dev": "nodemon -w src --exec \"babel-node src\"",
     "build": "babel src -s -D -d dist --presets es2015,stage-0",
     "start": "node dist",
     "prestart": "npm run -s build",
@@ -27,5 +27,12 @@
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "dependencies": {
+    "commander": "2.16.0",
+    "enbase": "1.0.21"
+  },
+  "bin": {
+    "enbase": "./dist/index.js"
   }
 }
