@@ -9,7 +9,8 @@
     "start": "node dist",
     "prestart": "npm run -s build",
     "test": "jest",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "bump": "node version.js"
   },
   "repository": "https://github.com/enteam/enbase-cli.git",
   "author": "Matisiek PL <matisiek11@gmail.com>",
@@ -30,7 +31,8 @@
   },
   "dependencies": {
     "commander": "2.16.0",
-    "enbase": "1.0.21"
+    "enbase": "1.0.21",
+    "node-fetch": "^2.1.2"
   },
   "bin": {
     "enbase": "./dist/index.js"
